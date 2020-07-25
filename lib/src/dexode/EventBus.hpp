@@ -22,7 +22,7 @@ class EventBus : public dexode::eventbus::Bus
 public:
 	std::size_t process() override
 	{
-		return processLimit(std::numeric_limits<std::size_t>::max());
+		return processLimit((std::numeric_limits<std::size_t>::max)());
 	}
 
 	std::size_t processLimit(std::size_t limit);
